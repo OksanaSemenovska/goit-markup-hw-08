@@ -1,0 +1,38 @@
+.contact-list {
+    display: flex;
+    column-gap: 50px;
+
+
+.contact-list_logo {
+        cursor: pointer;
+    }
+
+
+    &_logo:hover,
+    &_logo:focus {
+        fill: $color-btn-text;
+    }
+
+}
+
+.contact-list__link {
+    font-family: $primary-font;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: $secondary-text-color;
+    display: flex;
+    gap: 10px;
+    fill: currentColor;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+}
+
+.contact-list__link:hover,
+.contact-list__link:focus {
+    color: $color-btn-text;
+}
+

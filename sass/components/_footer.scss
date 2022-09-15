@@ -1,0 +1,42 @@
+.footer {
+    background-color: $color-main-fone;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-conteiner {
+    display: flex;
+    align-items: baseline;
+}
+
+.address__contact:hover,
+.address__contact:focus {
+    color: $color-btn-text;
+}
+
+.address__contact {
+    font-family: $primary-font;
+    line-height: 1.7;
+    color: $secondary-text-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.address {
+    font-style: normal;
+}
+
+.address__link {
+    font-family: $primary-font;
+    line-height: 1.7px;
+    color: $primary-text-color-theme-blew;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address__item {
+    margin-bottom: 9px;
+}
+
+.address__item--map {
+    margin-top: 20px;
+}

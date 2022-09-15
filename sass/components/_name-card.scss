@@ -1,0 +1,23 @@
+.name-projects {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+
+.name-projects__work {
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    color: $secondary-text-color;
+    margin-top: 4px;
+}
+
+.name-projects__proect {
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $primary-text-color;
+}

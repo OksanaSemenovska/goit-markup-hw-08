@@ -1,0 +1,28 @@
+.buton-modal-send {
+    font-family: $primary-font;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 52px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: $primary-text-color-theme-blew;
+    background: $color-btn-text;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    border: none;
+    border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+&:hover,
+&:focus {
+    background-color: $color-btn2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+}

@@ -1,0 +1,38 @@
+
+.activity__title {
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    color: $primary-text-color;
+    margin-bottom: 50px;
+}
+
+.activity__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.activity__image {
+    position: relative;
+}
+
+.activity__image-text {
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: $primary-text-color-theme-blew;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+}

@@ -1,0 +1,38 @@
+.portfolio-item {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 34px;
+}
+
+
+
+.portfolio-item__btn {
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: $primary-text-color;
+    background-color: $fone-btn-section;
+    padding: 6px 22px;
+    border: none;
+    border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.portfolio-item__btn:hover,
+.portfolio-item__btn:focus {
+    color: $primary-text-color-theme-blew;
+    background-color: $color-btn-text;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
