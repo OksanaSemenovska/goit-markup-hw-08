@@ -52,12 +52,60 @@
             >
           </li>
         </ul>
+        <!-----------------------------------MOBILE-MENU--------------------------------------------->
+        <button class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-button__icon" width="40" height="40" aria-label="Кнопка мобільного меню">
+            <use href="./images/icons.svg#icon-menu-mobile"></use>
+          </svg>
+        </button>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-button js-close-menu">
+            <svg width="40" height="40" aria-label="Кнопка закриття мобільного меню">
+              <use href="./images/icons.svg#icon-close_mobile"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu list link">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link mobile-menu__link--current">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Контакти</a>
+            </li>
+          </ul>
+          <ul class="mobile-contact list link">
+            <li>
+              <a href="tel:+380961111111" class="mobile-contact__link">+38 096 111 11 11 </a>
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mobile-contact__link mobile-contact__link--size"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-social-netw list link">
+            <li class="mobile-social-netw__item">
+              <a class="mobile-social-netw__link" href="#">Instagram</a>
+            </li>
+            <li class="mobile-social-netw__item">
+              <a class="mobile-social-netw__link" href="#">Twitter</a>
+            </li>
+            <li class="mobile-social-netw__item">
+              <a class="mobile-social-netw__link" href="#">Facebook</a>
+            </li>
+            <li class="mobile-social-netw__item">
+              <a class="mobile-social-netw__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
       <!----------------------------------------------------section-HERO----------------------------------------------------------------->
       <section class="title">
-        <div class="container hero">
+        <div class="hero">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
         </div>
@@ -119,34 +167,71 @@
         </div>
       </section>
 
-       <!----------------------------------------------------section-ACTIVITY----------------------------------------------------------------->
-      <section class="section2">
-        <div class="container activity">
+      <!----------------------------------------------------section-ACTIVITY----------------------------------------------------------------->
+      <section class="section2 activity">
+        <div class="container">
           <h2 class="activity__title">Чим ми займаємося</h2>
           <ul class="list activity__list">
             <li class="activity__image">
-              <img src="./images/box1.jpg" alt="Людина пише код" width="370" height="294" />
+              <img
+                srcset="./images/desktop/img1@1x.jpg 1x, ./images/desktop/img1@2x.jpg 2x"
+                src="./images/desktop/img1@1x.jpg"
+                alt="Людина пише код"
+                width="370"
+                height="294"
+              />
               <p class="activity__image-text">Десктопні додатки</p>
             </li>
             <li class="activity__image">
-              <img src="./images/box2.jpg" alt="Провіряє роботу" width="370" height="294" />
+              <img
+                srcset="./images/desktop/img2@1x.jpg 1x, ./images/desktop/img2@2x.jpg 2x"
+                src="./images/desktop/img2@1x.jpg"
+                alt="Мобільні додатки"
+                width="370"
+                height="294"
+              />
               <p class="activity__image-text">Мобільні додатки</p>
             </li>
             <li class="activity__image">
-              <img src="./images/box3.jpg" alt="Займається візуалом" width="370" height="294" />
+              <img
+                srcset="./images/desktop/img3@1x.jpg 1x, ./images/desktop/img3@2x.jpg 2x"
+                src="./images/desktop/img3@1x.jpg"
+                alt="Дизайнерські рішення"
+                width="370"
+                height="294"
+              />
               <p class="activity__image-text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
       </section>
-
-    <!----------------------------------------------------section-TEAM----------------------------------------------------------------->
+      <!----------------------------------------------------section-TEAM------------------------------------------------------------------>
       <section class="section-team section">
         <div class="container">
           <h2 class="activity__title">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-list__item">
-              <img src="./images/photo1.jpg" alt="Ігор" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/tablet/photo1igor@1x.jpg 1x, ./images/tablet/photo1igor@2.jpg 2x"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/photo1igor@1x.jpg 1x,
+                    ./images/desktop/photo1igor@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/photo1igor@1x.jpg 1x,
+                    ./images/mobile/photo1igor@2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <img src="./images/mobile/photo1igor@1x.jpg" alt="Ігор Дем'яненко" />
+              </picture>
               <div class="team-content">
                 <h3 class="team-content__name">Ігор Дем'яненко</h3>
                 <p class="team-content__job">Product Designer</p>
@@ -183,7 +268,30 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/photo2.jpg" alt="Ольга" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/tablet/photo2olga@1x.jpg 1x,
+                    ./images/tablet/photo2olga@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/photo2olga@1x.jpg 1x,
+                    ./images/desktop/photo2olga@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/photo2olga@1x.jpg 1x,
+                    ./images/mobile/photo2olga@2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <img src="./images/mobile/photo2olga@1x.jpg" alt="Ольга Рєпіна" />
+              </picture>
               <div class="team-content">
                 <h3 class="team-content__name">Ольга Рєпіна</h3>
                 <p class="team-content__job">Frontend Developer</p>
@@ -220,7 +328,30 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/photo3.jpg" alt="Микола" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/tablet/photo3mikola@1x.jpg 1x,
+                    ./images/tablet/photo3mikola@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/photo3mikola@1x.jpg 1x,
+                    ./images/desktop/photo3mikola@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/photo3mikola@1x.jpg 1x,
+                    ./images/mobile/photo3mikola@2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <img src="./images/mobile/photo3mikola@1x.jpg" alt="Микола Тарасов" />
+              </picture>
               <div class="team-content">
                 <h3 class="team-content__name">Микола Тарасов</h3>
                 <p class="team-content__job">Marketing</p>
@@ -257,7 +388,30 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/photo4.jpg" alt="Михайло" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/tablet/photo4myhailo@1x.jpg 1x,
+                    ./images/tablet/photo4myhailo@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/photo4myhailo@1x.jpg 1x,
+                    ./images/desktop/photo4myhailo@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/photo4mihailo@1x.jpg 1x,
+                    ./images/mobile/photo4mihailo@2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <img src="./images/mobile/photo4mihailo@1x.jpg" alt="Микола Тарасов" />
+              </picture>
               <div class="team-content">
                 <h3 class="team-content__name">Михайло Єрмаков</h3>
                 <p class="team-content__job">UI Designer</p>
@@ -296,7 +450,7 @@
           </ul>
         </div>
       </section>
-         <!----------------------------------------------------section-CUSTOMERS----------------------------------------------------------------->
+      <!----------------------------------------------------section-CUSTOMERS----------------------------------------------------------------->
       <section class="section">
         <div class="container">
           <h2 class="activity__title">Постійні клієнти</h2>
@@ -349,7 +503,7 @@
         </div>
       </section>
     </main>
-   <!----------------------------------------------------FOOTER----------------------------------------------------------------->
+    <!----------------------------------------------------FOOTER----------------------------------------------------------------->
     <footer class="footer">
       <div class="container footer-conteiner">
         <div>
@@ -379,7 +533,7 @@
             </ul>
           </address>
         </div>
-<!--Join-->
+        <!--Join-->
         <div class="join">
           <p class="join__text">приєднуйтесь</p>
           <ul class="social-list list">
@@ -418,7 +572,13 @@
           <p class="join__text">підпишіться на розсилку</p>
           <form class="form-footer">
             <label for="meil" class="form-footer__label">
-              <input type="mail" name="E-mail" id="mail" placeholder="E-mail" class="form-footer__mail" />
+              <input
+                type="mail"
+                name="E-mail"
+                id="mail"
+                placeholder="E-mail"
+                class="form-footer__mail"
+              />
             </label>
             <button class="form-footer__button">
               Підписатися
@@ -439,7 +599,7 @@
           </svg>
         </button>
         <form class="form-modal">
-        <p class="form-modal__title">Залиште свої дані, ми вам передзвонимо</p>
+          <p class="form-modal__title">Залиште свої дані, ми вам передзвонимо</p>
 
           <div class="input-box">
             <label for="name" class="input-box__label">Ім'я</label>
@@ -477,25 +637,33 @@
               class="input-box__textarea"
               name="comments"
               id="comments"
-              placeholder="Введіть текст"></textarea>
+              placeholder="Введіть текст"
+            ></textarea>
           </div>
-        <div class="checkbox">
-          <label class="checkbox__label">
-            <input class="checkbox__input" type="checkbox" name="topic" id="checkboks" />
-            <span class="checkbox__icon">
-              <svg class="checkbox__svg">
-                <use href="./images/icons.svg#icon-confirm"></use>
-              </svg>
-            </span>
-            Погоджуюся з розсилкою та приймаю
-            <a href="#" class="checkbox__link">Умови договору</a></label
-          >
-        </div>
+          <div class="checkbox">
+            <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="topic" id="checkboks" />
+              <span class="checkbox__icon">
+                <svg class="checkbox__svg">
+                  <use href="./images/icons.svg#icon-confirm"></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю
+              <a href="#" class="checkbox__link">Умови договору</a></label
+            >
+          </div>
 
-        <button class="buton-modal-send" type="submit">Відправити</button>
+          <button class="buton-modal-send" type="submit">Відправити</button>
         </form>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,3 +1,8 @@
+
+@media screen  and (min-width: 1200px) {
+
+
+
 .contact-list {
     display: flex;
     column-gap: 50px;
@@ -15,6 +20,9 @@
 
 }
 
+}
+
+@media screen and (min-width: 768px) {
 .contact-list__link {
     font-family: $primary-font;
     font-weight: 500;
@@ -35,4 +43,24 @@
 .contact-list__link:focus {
     color: $color-btn-text;
 }
+}
+
+@media screen and (max-width: 1199px) {
+    .contact-list {
+    display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+        }
+    .contact-list_logo {
+        @media screen and (min-width: 768px) {
+                margin-right: 8px;
+            }
+        
+            @media screen and (min-width: 768px) {
+                margin-right: 10px;
+            }
+        }
+    
+
 

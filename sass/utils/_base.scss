@@ -51,25 +51,49 @@ body {
 svg 
 {
     display: block;
-}
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+
+
+    
 }
 
-.section2 {
-    padding-bottom: 94px;
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
+
+@media screen and (min-width: 1200px) {
+.section2 {
+        padding-bottom: 94px;
+    }
+}
+
+
 
 
 
 .container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+@media screen and (min-width: 448px) {
+width: 448px;
+
+@media screen and (min-width: 768px) {
+        width: 768px;
+    }
 }
+
+@media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+
+   }
+
 
 .visually-hidden {
     position: absolute;

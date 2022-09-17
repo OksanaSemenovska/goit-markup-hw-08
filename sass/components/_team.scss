@@ -5,9 +5,13 @@
 }
 
 .team-list {
+    flex-direction: column;
     display: flex;
     gap: 30px;
-
+@media screen and (min-width: 768px) {
+flex-direction: row;
+    flex-wrap: wrap;
+}
 }
 
 
@@ -32,7 +36,6 @@
 }
 
 .team-content__name {
-
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
