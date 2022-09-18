@@ -17,8 +17,14 @@
     font-size: 26px;
     line-height: 1.2;
     color: $color-btn-text;
-    display: inline-block;
+ display: inherit;
+ text-align: center;
+
+ @include desktop {
+     text-align: start;
+ }
 }
+ 
 
 .studio-footer {
     color: $primary-text-color-theme-blew;

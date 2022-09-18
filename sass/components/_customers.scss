@@ -4,13 +4,20 @@
     width: 106px;
     height: 60px;
     fill: currentColor;
-}
+    }
+
 
 .customers-list {
     display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 30px;
     justify-content: center;
-    column-gap: 30px;
-}
+        @media screen and (min-width: 1200px){
+            margin-top: 50px;
+        }
+    }
+
 
 .customers-list__link {
     display: flex;
