@@ -22,7 +22,7 @@
 
 
 
-@media screen and (min-width: 768px) {
+@include tablet {
 .title {
     max-width: 768px;
 background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -41,7 +41,7 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     }
 
 
-@media screen and (min-width: 1200px) {
+@include desktop {
     .title {
         max-width: 1600px;
         padding-top: 200px;
@@ -78,7 +78,7 @@ font-family: $primary-font;
             color: $primary-text-color-theme-blew;
  }
  
-@media screen and (min-width: 1200px) {
+@include desktop {
     .hero__title {
         font-size: 44px;
             line-height: 1.36;
@@ -115,7 +115,7 @@ font-family: $primary-font;
         }
 
 
-  @media screen and (min-width: 1200px) {
+ @include desktop {
       padding: 10px 32px;
   }
   }

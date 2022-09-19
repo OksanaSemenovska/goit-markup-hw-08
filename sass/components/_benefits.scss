@@ -9,12 +9,12 @@
         row-gap: 30px;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @include tablet {
         flex-wrap: wrap;
         gap: 30px;
     }
 
-    @media screen and (min-width: 1200px) {
+        @include desktop {
         column-gap: 30px;
     }
 }
@@ -40,11 +40,11 @@ max-width: 450px;
     background-color: $fone-btn-section;
 margin-bottom: 30px;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         width: 354px;
     }
 
-    @media screen and (min-width: 1200px) {
+        @include desktop {
         width: 270px;
     }
 }
@@ -60,11 +60,11 @@ margin-bottom: 30px;
     color: $secondary-text-color;
     margin-top: 10px;
     max-width: 450px;
-    @media screen and (min-width: 768px) {
+    @include tablet {
             width: 354px;
         }
     
-        @media screen and (min-width: 1200px) {
+                @include desktop {
             width: 270px;
         }
 }

@@ -1,25 +1,22 @@
  
 .activity__title {
-    font-family: $primary-font;
-    font-weight: 700;
+font-family: $primary-font;
+font-weight: 700;
 font-size: 28px;
-    line-height: 0.84;
-    text-align: center;
-    color: $primary-text-color;
-   
-
-    @media screen and (min-width: 1200px) {
-        font-size: 36px;
-            line-height: 1.2;
-            margin-bottom: 50px;
+line-height: 0.84;
+text-align: center;
+color: $primary-text-color;
+ @include desktop {
+font-size: 36px;
+line-height: 1.2;
+margin-bottom: 50px;
         }
 }
 
  .activity {
     display: none;
  
- 
- @media screen and (min-width: 1200px) {
+@include desktop {
     display: block;
 }
 }

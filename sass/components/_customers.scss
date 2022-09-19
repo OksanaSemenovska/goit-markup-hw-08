@@ -13,7 +13,7 @@
         flex-wrap: wrap;
         margin-top: 30px;
     justify-content: center;
-        @media screen and (min-width: 1200px){
+    @include desktop {
             margin-top: 50px;
         }
     }

@@ -171,15 +171,26 @@ svg {
     line-height: 1.1;
     color: #212121;
     position: relative;
-    padding-bottom: 32px;
+    padding-bottom: 37px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .menu__link {
+    padding-bottom: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
   .menu__link:hover, .menu__link:focus {
     color: #2196F3;
   }
+}
+@media screen and (min-width: 768px) {
   .current {
     color: #2196F3;
   }
+}
+@media screen and (min-width: 768px) {
   .current::after {
     content: "";
     position: absolute;
@@ -349,7 +360,7 @@ svg {
     row-gap: 30px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .benefits {
     flex-wrap: wrap;
     gap: 30px;
@@ -1248,6 +1259,7 @@ svg {
   fill: currentColor;
   border: none;
   padding: 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-button:hover, .menu-button:focus {
   color: #2196F3;
@@ -1300,6 +1312,7 @@ svg {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu__link:hover, .mobile-menu__link:focus {
   color: #2196F3;
@@ -1323,6 +1336,7 @@ svg {
   line-height: 40px;
   letter-spacing: 0.02em;
   color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-contact__link:hover, .mobile-contact__link:focus {
   color: #2196F3;

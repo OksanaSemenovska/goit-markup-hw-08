@@ -4,6 +4,8 @@
     fill: currentColor;
     border: none;
     padding: 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
         color: $color-btn-text ;
@@ -55,6 +57,7 @@
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
         color: $color-btn-text;
@@ -80,6 +83,7 @@
         line-height: 40px;
     letter-spacing: 0.02em;
     color: $secondary-text-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
         color: $color-btn-text;
@@ -105,7 +109,6 @@
 
 .mobile-social-netw__item {
     position: relative;
-
     &:not(:last-child)::after {
         content: '';
         position: absolute;
