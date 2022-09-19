@@ -63,7 +63,7 @@
 
 .input-box__textarea {
     display: block;
-    width: 448px;
+    width: 370px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -77,6 +77,10 @@
     outline: none;
     cursor: pointer;
     margin-top: 4px;
+    @include desktop {
+        width: 448px;
+            height: 120px;
+    }
 
 }
 

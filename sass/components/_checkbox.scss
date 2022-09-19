@@ -1,17 +1,22 @@
 .checkbox {
     margin-bottom: 30px;
-    padding-left: 13px;
     margin-top: 20px;
+    @include desktop {
+padding-left: 13px;
+    }
 }
 
 .checkbox__label {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    font-size: 12px;
+    line-height: 1.16;
     color: $secondary-text-color;
     display: flex;
     align-items: center;
     gap: 7px;
+    @include desktop {
+font-size: 14px;
+    line-height: 1.71;
+    }
 }
 
 .checkbox__label span {
@@ -43,19 +48,26 @@
 }
 
 .checkbox__link {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     color: $color-btn-text;
     position: relative;
+    @include desktop {
+            font-size: 14px;
+            line-height: 1.71;
+        }
 }
 
 .checkbox__link::after {
     position: absolute;
     content: "";
-    bottom: 5px;
+    bottom: 1px;
     right: 0;
     width: 100%;
     height: 1px;
     background-color: $color-btn-text;
+    @include desktop {
+            bottom: 5px;
+        }
 
 }

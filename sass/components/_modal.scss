@@ -20,14 +20,18 @@
     visibility: hidden;
 }
 
+
 .modal {
-    height: 581px;
-    width: 528px;
+    width: 450px;
     background-color: $primary-text-color-theme-blew;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @include desktop {
+        height: 581px;
+            width: 528px;
+    }
 }
 
 .modal__close-btn {

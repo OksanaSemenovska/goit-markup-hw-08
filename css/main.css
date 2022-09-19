@@ -752,7 +752,7 @@ svg {
 }
 
 .form-footer__mail {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding: 0;
   background-color: transparent;
@@ -760,6 +760,16 @@ svg {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   display: block;
+}
+@media screen and (min-width: 768px) {
+  .form-footer__mail {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-footer__mail {
+    width: 358px;
+  }
 }
 
 .form-footer__button {
@@ -826,13 +836,18 @@ svg {
 }
 
 .modal {
-  height: 581px;
-  width: 528px;
+  width: 450px;
   background-color: #FFFFFF;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    height: 581px;
+    width: 528px;
+  }
 }
 
 .modal__close-btn {
@@ -924,7 +939,7 @@ svg {
 
 .input-box__textarea {
   display: block;
-  width: 448px;
+  width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -938,6 +953,12 @@ svg {
   outline: none;
   cursor: pointer;
   margin-top: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .input-box__textarea {
+    width: 448px;
+    height: 120px;
+  }
 }
 
 .input-box__textarea:focus {
@@ -955,18 +976,27 @@ svg {
 
 .checkbox {
   margin-bottom: 30px;
-  padding-left: 13px;
   margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox {
+    padding-left: 13px;
+  }
 }
 
 .checkbox__label {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 1.16;
   color: #757575;
   display: flex;
   align-items: center;
   gap: 7px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__label span {
@@ -996,20 +1026,31 @@ svg {
 }
 
 .checkbox__link {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   color: #2196F3;
   position: relative;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__link::after {
   position: absolute;
   content: "";
-  bottom: 5px;
+  bottom: 1px;
   right: 0;
   width: 100%;
   height: 1px;
   background-color: #2196F3;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__link::after {
+    bottom: 5px;
+  }
 }
 
 .buton-modal-send {
@@ -1284,10 +1325,15 @@ svg {
   color: #757575;
 }
 .mobile-contact__link:hover, .mobile-contact__link:focus {
-  transform: scale(1.18);
   color: #2196F3;
 }
 .mobile-contact__link .mobile-contacts__link--size {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.mobile-contact__link--size {
+  font-weight: 500;
   font-size: 24px;
   line-height: 28px;
 }
