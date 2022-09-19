@@ -31,8 +31,8 @@ ol {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 button {
@@ -132,17 +132,31 @@ svg {
   color: #FFFFFF;
 }
 
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 @media screen and (min-width: 768px) {
-  .header {
+  .header__container {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__container {
     padding-top: 24px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #ECECEC;
   }
-  .header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+}
+
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+@media screen and (min-width: 768px) {
   .navigation {
     display: flex;
     align-items: center;
@@ -462,8 +476,9 @@ svg {
 }
 
 .team-list {
-  flex-direction: column;
+  margin-top: 30px;
   display: flex;
+  flex-direction: column;
   gap: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -472,11 +487,27 @@ svg {
     flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team-list {
+    margin-top: 50px;
+  }
+}
 
 .team-list__item {
+  width: 100%;
   background-color: #FFFFFF;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 768px) {
+  .team-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .team-content {
@@ -499,6 +530,10 @@ svg {
   text-align: center;
   color: #212121;
   margin-bottom: 10px;
+}
+
+.team-list__img {
+  width: 100%;
 }
 
 .social-list__icon {
@@ -1001,9 +1036,21 @@ svg {
 
 .portfolio-item {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 326px;
   gap: 8px;
-  margin-bottom: 34px;
+  column-gap: 15px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-item {
+    max-width: 100%;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-item {
+    column-gap: 8px;
+  }
 }
 
 .portfolio-item__btn {
@@ -1028,9 +1075,21 @@ svg {
 }
 
 .projects {
+  justify-content: center;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .projects {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects {
+    margin-top: 50px;
+  }
 }
 
 .card-interactive {
@@ -1041,6 +1100,13 @@ svg {
 .card-interactive:hover .card-interactive__text, .card-interactive:focus .card-interactive__text {
   transform: translateY(0%);
   background: rgba(33, 150, 243, 0.9);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card-interactive:hover .card-interactive__text, .card-interactive:focus .card-interactive__text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 .card-interactive:hover, .card-interactive:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1066,11 +1132,35 @@ svg {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 480px) {
+  .card-interactive__text {
+    padding: 77px 24px;
+  }
+}
+
+.card-interactive_img {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .card-interactive_img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-interactive_img {
+    width: 370px;
+  }
+}
 
 .name-projects {
-  padding: 20px 24px;
   border: 1px solid #EEEEEE;
-  border-top: none;
+  border-top: transparent;
+  padding: 20px 24px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .name-projects {
+    flex-grow: 1;
+  }
 }
 
 .name-projects__work {
@@ -1090,7 +1180,27 @@ svg {
   letter-spacing: 0.06em;
   color: #212121;
 }
+@media screen and (min-width: 768px) {
+  .name-projects__proect {
+    width: 304px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .name-projects__proect {
+    width: 100%;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .projects__item:first-child .name-projects {
+    padding: 20px 24px 56px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__item:first-child .name-projects {
+    padding: 20px 24px;
+  }
+}
 .menu-button {
   cursor: pointer;
   background-color: #FFFFFF;

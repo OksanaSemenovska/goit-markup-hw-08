@@ -1,8 +1,14 @@
 .name-projects {
-    padding: 20px 24px;
     border: 1px solid #EEEEEE;
-    border-top: none;
-}
+    border-top: transparent;
+    @media screen and (min-width: 768px) and (max-width: 1199px) { flex-grow: 1;
+        }
+        padding: 20px 24px;
+       
+    }
+
+
+
 
 .name-projects__work {
     font-family: $primary-font;
@@ -20,4 +26,23 @@
     line-height: 2;
     letter-spacing: 0.06em;
     color: $primary-text-color;
+@include tablet {
+        width: 304px;
+    }
+
+    @include desktop {
+        width: 100%;
+    }
+}
+
+@include tablet {
+    .projects__item:first-child .name-projects{
+        padding: 20px 24px 56px;
+    }
+}
+
+@include desktop {
+    .projects__item:first-child .name-projects{
+        padding: 20px 24px;
+    }
 }

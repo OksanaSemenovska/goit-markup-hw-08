@@ -49,6 +49,54 @@
             >
           </li>
         </ul>
+        <!-----------------------------------MOBILE-MENU--------------------------------------------->
+        <button class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-button__icon" width="40" height="40" aria-label="Кнопка мобільного меню">
+            <use href="./images/icons.svg#icon-menu-mobile"></use>
+          </svg>
+        </button>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-button js-close-menu">
+            <svg width="40" height="40" aria-label="Кнопка закриття мобільного меню">
+              <use href="./images/icons.svg#icon-close_mobile"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu list link">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link mobile-menu__link--current">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Контакти</a>
+            </li>
+          </ul>
+          <ul class="mobile-contact list link">
+            <li>
+              <a href="tel:+380961111111" class="mobile-contact__link">+38 096 111 11 11 </a>
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mobile-contact__link mobile-contact__link--size"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-social-netw list link">
+            <li class="mobile-social-netw__item">
+              <a class="mobile-social-netw__link" href="#">Instagram</a>
+            </li>
+            <li class="mobile-social-netw__item">
+              <a class="mobile-social-netw__link" href="#">Twitter</a>
+            </li>
+            <li class="mobile-social-netw__item">
+              <a class="mobile-social-netw__link" href="#">Facebook</a>
+            </li>
+            <li class="mobile-social-netw__item">
+              <a class="mobile-social-netw__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -63,14 +111,14 @@
             <li><button class="portfolio-item__btn" type="button">Маркетинг</button></li>
           </ul>
           <ul class="list projects">
-            <li>
+            <li class="projects__item">
               <a class="card-interactive" href="#">
                 <div class="card-interactive__transform">
                   <picture>
-                <source srcset="./images/tablet/portfolio1@1x.jpg 1x, ./images/tablet/portfolio1@2x.jpg 2x" media="(max-width: 1199px)">
+                <source srcset="./images/tablet/portfolio1@1x.jpg 1x, ./images/tablet/portfolio1@2x.jpg 2x" media="(min-width: 768px)">
                 <source srcset="./images/desktop/portfolio1@1x.jpg 1x, ./images/desktop/portfolio1@2x.jpg 2x" media="(min-width: 1200px)">
-                  <source srcset="./images/mobile/portfolio1@1x.jpg 1x, ./images/mobile/portfolio1@2x.jpg 2x" media="(max-width: 768px)">
-                  <img src="./images/mobile/portfolio1@1x.jpg" alt="сайт">
+                  <source srcset="./images/mobile/portfolio1@1x.jpg 1x, ./images/mobile/portfolio1@2x.jpg 2x" media="(max-width: 767px)">
+                  <img width="450" class="card-interactive_img" src="./images/mobile/portfolio1@1x.jpg" alt="сайт">
               </picture>
                   <p class="card-interactive__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -85,14 +133,14 @@
               </a>
             </li>
 
-            <li>
+            <li class="projects__item">
               <a class="card-interactive" href="#">
                 <div class="card-interactive__transform">
                    <picture>
-                <source srcset="./images/tablet/portfolio2@1x.jpg 1x, ./images/tablet/portfolio2@2x.jpg 2x" media="(max-width: 1199px)">
+                <source srcset="./images/tablet/portfolio2@1x.jpg 1x, ./images/tablet/portfolio2@2x.jpg 2x" media="(min-width: 768px)">
                 <source srcset="./images/desktop/portfolio2@1x.jpg 1x, ./images/desktop/portfolio2@2x.jpg 2x" media="(min-width: 1200px)">
-                  <source srcset="./images/mobile/portfolio2@1x.jpg 1x, ./images/mobile/portfolio2@2x.jpg 2x" media="(max-width: 768px)">
-                  <img src="./images/mobile/portfolio2@1x.jpg" alt="баскетболісти">
+                  <source srcset="./images/mobile/portfolio2@1x.jpg 1x, ./images/mobile/portfolio2@2x.jpg 2x" media="(max-width: 767px)">
+                  <img width="450" class="card-interactive_img" src="./images/mobile/portfolio2@1x.jpg" alt="баскетболісти">
               </picture>
                   <p class="card-interactive__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -106,14 +154,14 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="projects__item">
               <a class="card-interactive" href="#">
                 <div class="card-interactive__transform">
                     <picture>
-                <source srcset="./images/tablet/portfolio3@1x.jpg 1x, ./images/tablet/portfolio3@2x.jpg 2x" media="(max-width: 1199px)">
+                <source srcset="./images/tablet/portfolio3@1x.jpg 1x, ./images/tablet/portfolio3@2x.jpg 2x" media="(min-width: 768px)">
                 <source srcset="./images/desktop/portfolio3@1x.jpg 1x, ./images/desktop/portfolio3@2x.jpg 2x" media="(min-width: 1200px)">
-                  <source srcset="./images/mobile/portfolio3@1x.jpg 1x, ./images/mobile/portfolio3@2x.jpg 2x" media="(max-width: 768px)">
-                  <img src="./images/mobile/portfolio3@1x.jpg" alt="емблема ресторану">
+                  <source srcset="./images/mobile/portfolio3@1x.jpg 1x, ./images/mobile/portfolio3@2x.jpg 2x" media="(max-width: 767px)">
+                  <img width="450" class="card-interactive_img" src="./images/mobile/portfolio3@1x.jpg" alt="емблема ресторану">
               </picture>
                   <p class="card-interactive__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -127,14 +175,14 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="projects__item">
               <a class="card-interactive" href="#">
                 <div class="card-interactive__transform">
                     <picture>
-                <source srcset="./images/tablet/portfolio4@1x.jpg 1x, ./images/tablet/portfolio4@2x.jpg 2x" media="(max-width: 1199px)">
+                <source srcset="./images/tablet/portfolio4@1x.jpg 1x, ./images/tablet/portfolio4@2x.jpg 2x" media="(min-width: 768px)">
                 <source srcset="./images/desktop/portfolio4@1x.jpg 1x, ./images/desktop/portfolio4@2x.jpg 2x" media="(min-width: 1200px)">
-                  <source srcset="./images/mobile/portfolio4@1x.jpg 1x, ./images/mobile/portfolio4@2x.jpg 2x" media="(max-width: 768px)">
-                  <img src="./images/mobile/portfolio4@1x.jpg" alt="навушники">
+                  <source srcset="./images/mobile/portfolio4@1x.jpg 1x, ./images/mobile/portfolio4@2x.jpg 2x" media="(max-width: 767px)">
+                  <img width="450" class="card-interactive_img" src="./images/mobile/portfolio4@1x.jpg" alt="навушники">
               </picture>
                   <p class="card-interactive__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -148,14 +196,14 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="projects__item">
               <a class="card-interactive" href="#">
                 <div class="card-interactive__transform">
                   <picture>
-                <source srcset="./images/tablet/portfolio5@1x.jpg 1x, ./images/tablet/portfolio5@2x.jpg 2x" media="(max-width: 1199px)">
+                <source srcset="./images/tablet/portfolio5@1x.jpg 1x, ./images/tablet/portfolio5@2x.jpg 2x" media="(min-width: 768px)">
                 <source srcset="./images/desktop/portfolio5@1x.jpg 1x, ./images/desktop/portfolio5@2x.jpg 2x" media="(min-width: 1200px)">
-                  <source srcset="./images/mobile/portfolio5@1x.jpg 1x, ./images/mobile/portfolio5@2x.jpg 2x" media="(max-width: 768px)">
-                  <img src="./images/mobile/portfolio5@1x.jpg" alt="коробки">
+                  <source srcset="./images/mobile/portfolio5@1x.jpg 1x, ./images/mobile/portfolio5@2x.jpg 2x" media="(max-width: 767px)">
+                  <img width="450" class="card-interactive_img" src="./images/mobile/portfolio5@1x.jpg" alt="коробки">
               </picture>
                   <p class="card-interactive__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -169,14 +217,14 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="projects__item">
               <a class="card-interactive" href="#">
                 <div class="card-interactive__transform">
                   <picture>
-                <source srcset="./images/tablet/portfolio6@1x.jpg 1x, ./images/tablet/portfolio6@2x.jpg 2x" media="(max-width: 1199px)">
+                <source srcset="./images/tablet/portfolio6@1x.jpg 1x, ./images/tablet/portfolio6@2x.jpg 2x" media="(min-width: 768px)">
                 <source srcset="./images/desktop/portfolio6@1x.jpg 1x, ./images/desktop/portfolio6@2x.jpg 2x" media="(min-width: 1200px)">
-                  <source srcset="./images/mobile/portfolio6@1x.jpg 1x, ./images/mobile/portfolio6@2x.jpg 2x" media="(max-width: 768px)">
-                  <img src="./images/mobile/portfolio6@1x.jpg" alt="монітор">
+                  <source srcset="./images/mobile/portfolio6@1x.jpg 1x, ./images/mobile/portfolio6@2x.jpg 2x" media="(max-width: 767px)">
+                  <img width="450" class="card-interactive_img" src="./images/mobile/portfolio6@1x.jpg" alt="монітор">
               </picture>
                   <p class="card-interactive__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -191,14 +239,14 @@
               </a>
             </li>
 
-            <li>
+            <li class="projects__item">
               <a class="card-interactive" href="#">
                 <div class="card-interactive__transform">
                   <picture>
-                <source srcset="./images/tablet/portfolio7@1x.jpg 1x, ./images/tablet/portfolio7@2x.jpg 2x" media="(max-width: 1199px)">
+                <source srcset="./images/tablet/portfolio7@1x.jpg 1x, ./images/tablet/portfolio7@2x.jpg 2x" media="(min-width: 768px)">
                 <source srcset="./images/desktop/portfolio7@1x.jpg 1x, ./images/desktop/portfolio7@2x.jpg 2x" media="(min-width: 1200px)">
-                  <source srcset="./images/mobile/portfolio7@1x.jpg 1x, ./images/mobile/portfolio7@2x.jpg 2x" media="(max-width: 768px)">
-                  <img src="./images/mobile/portfolio7@1x.jpg" alt="журнал">
+                  <source srcset="./images/mobile/portfolio7@1x.jpg 1x, ./images/mobile/portfolio7@2x.jpg 2x" media="(max-width: 767px)">
+                  <img width="450" class="card-interactive_img" src="./images/mobile/portfolio7@1x.jpg" alt="журнал">
               </picture>
                   <p class="card-interactive__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -212,14 +260,14 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="projects__item">
               <a class="card-interactive" href="#">
                 <div class="card-interactive__transform">
                  <picture>
-                <source srcset="./images/tablet/portfolio8@1x.jpg 1x, ./images/tablet/portfolio8@2x.jpg 2x" media="(max-width: 1199px)">
+                <source srcset="./images/tablet/portfolio8@1x.jpg 1x, ./images/tablet/portfolio8@2x.jpg 2x" media="(min-width: 768px)">
                 <source srcset="./images/desktop/portfolio8@1x.jpg 1x, ./images/desktop/portfolio8@2x.jpg 2x" media="(min-width: 1200px)">
-                  <source srcset="./images/mobile/portfolio8@1x.jpg 1x, ./images/mobile/portfolio8@2x.jpg 2x" media="(max-width: 768px)">
-                  <img src="./images/mobile/portfolio8@1x.jpg" alt="бірка">
+                  <source srcset="./images/mobile/portfolio8@1x.jpg 1x, ./images/mobile/portfolio8@2x.jpg 2x" media="(max-width: 767px)">
+                  <img width="450" class="card-interactive_img" src="./images/mobile/portfolio8@1x.jpg" alt="бірка">
               </picture>
                   <p class="card-interactive__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -233,14 +281,14 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="projects__item">
               <a class="card-interactive" href="#">
                 <div class="card-interactive__transform">
                   <picture>
-                <source srcset="./images/tablet/portfolio9@1x.jpg 1x, ./images/tablet/portfolio9@2x.jpg 2x" media="(max-width: 1199px)">
+                <source srcset="./images/tablet/portfolio9@1x.jpg 1x, ./images/tablet/portfolio9@2x.jpg 2x" media="(min-width: 768px)">
                 <source srcset="./images/desktop/portfolio9@1x.jpg 1x, ./images/desktop/portfolio9@2x.jpg 2x" media="(min-width: 1200px)">
-                  <source srcset="./images/mobile/portfolio9@1x.jpg 1x, ./images/mobile/portfolio9@2x.jpg 2x" media="(max-width: 768px)">
-                  <img src="./images/mobile/portfolio9@1x.jpg" alt="ноутбук">
+                  <source srcset="./images/mobile/portfolio9@1x.jpg 1x, ./images/mobile/portfolio9@2x.jpg 2x" media="(max-width: 767px)">
+                  <img width="450" class="card-interactive_img" src="./images/mobile/portfolio9@1x.jpg" alt="ноутбук">
               </picture>
                   <p class="card-interactive__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -259,7 +307,7 @@
       </section>
     </main>
     <!----------------------------------------------------FOOTER----------------------------------------------------------------->
- <footer class="footer">
+<footer class="footer">
       <div class="container footer-conteiner">
         <div>
           <a class="link webstudio-footer" href="./index.html" lang="en"
@@ -288,7 +336,7 @@
             </ul>
           </address>
         </div>
-<!--Join-->
+        <!--Join-->
         <div class="join">
           <p class="join__text">приєднуйтесь</p>
           <ul class="social-list list">
@@ -324,10 +372,17 @@
         </div>
         <div>
           <!--FORM-FOOTER-->
+          
           <p class="join__text">підпишіться на розсилку</p>
-          <form class="form-footer">
-            <label for="meil" class="form-footer__label">
-              <input type="mail" name="E-mail" id="mail" placeholder="E-mail" class="form-footer__mail" />
+           <form class="form-footer">
+  <label for="meil" class="form-footer__label">
+              <input
+                type="mail"
+                name="E-mail"
+                id="mail"
+                placeholder="E-mail"
+                class="form-footer__mail"
+              />
             </label>
             <button class="form-footer__button">
               Підписатися
